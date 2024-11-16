@@ -6,8 +6,10 @@ def main():
         pygame.init()
         # You can draw the mole with this snippet:
         # screen.blit(mole_image, mole_image.get_rect(topleft=(x,y)))
+
         mole_image = pygame.image.load("mole.png")
         screen = pygame.display.set_mode((640, 512))
+        pygame.draw.line(screen, "light green", (1,1), (2,2))
         clock = pygame.time.Clock()
         running = True
         while running:
